@@ -103,14 +103,14 @@
                 <h1 style="color: white;">Skills</h1>
             </div>
 
-            <div class="row text-center">
-                <div class="col col-md-6 technical" style="align-items: center;">
+            <div class="row text-center ">
+                <div class="col col-md-6 technical" style="align-items: center; border-right: 1px solid #ccc;">
 
                     <div>
                         <h2 style="color: white;">Technical Skills</h2>
                     </div>
 
-                    <div class="progress-container d-block text-start">
+                    <div class="progress-container d-block text-start ">
                         <div>
                             <h4 style="color: white;">HTML</h4>
                         </div>
@@ -168,7 +168,7 @@
 
                 <div class="col col-md-6 soft">
                     <div>
-                        <h2 style="color: white;">Soft Skills</h2>
+                        <h2 style="color: white;"> Laguages</h2>
                     </div>
 
                     <div class="progress-circle-container">
@@ -176,27 +176,55 @@
                         <div class="progress-circle">
                             <svg>
                                 <circle class="bg" cx="57" cy="57" r="52" />
-                                <circle class="meter-1" cx="57" cy="57" r="52" />
-                                <text x="50%" y="50%" class="progress-percent-circle">0%</text>
+                                <circle class="meter meter-1" data-value="100" cx="57" cy="57" r="52" />
+                                <text x="50%" y="50%" class="progress-percent-circle">100%</text>
                             </svg>
+                            <div>
+                                <p style="color: white;">Vietnamese</p>
+                            </div>
                         </div>
 
                         <div class="progress-circle">
                             <svg>
                                 <circle class="bg" cx="57" cy="57" r="52" />
-                                <circle class="meter-2" cx="57" cy="57" r="52" />
-                                <text x="50%" y="50%" class="progress-percent-circle">0%</text>
+                                <circle class="meter meter-2" data-value="75" cx="57" cy="57" r="52" />
+                                <text x="50%" y="50%" class="progress-percent-circle">75%</text>
                             </svg>
+                            <div>
+                                <p style="color: white;">English</p>
+                            </div>
                         </div>
 
                         <div class="progress-circle">
                             <svg>
                                 <circle class="bg" cx="57" cy="57" r="52" />
-                                <circle class="meter-3" cx="57" cy="57" r="52" />
-                                <text x="50%" y="50%" class="progress-percent-circle">0%</text>
+                                <circle class="meter meter-3" data-value="30" cx="57" cy="57" r="52" />
+                                <text x="50%" y="50%" class="progress-percent-circle">30%</text>
                             </svg>
+                            <div>
+                                <p style="color: white;">Japanese</p>
+                            </div>
                         </div>
 
+                    </div>
+
+                    <div class="cc">
+                        <div class="card">
+
+                            <div class="card-info">
+                                <h2 style="color: white; margin-top: 20px;"> Soft Skills </h2>
+                            </div>
+                            <hr class="custom-hr">
+                            <div class="card-info">
+                                <span><i class="fa-solid fa-check" style="color: white;"></i> Team work</span>
+                                <span><i class="fa-solid fa-check" style="color: white;"></i> Time management</span>
+                                <span><i class="fa-solid fa-check" style="color: white;"></i> Presentation and
+                                    communication</span>
+                                <span><i class="fa-solid fa-check" style="color: white;"></i> Adaptability</span>
+                                <span><i class="fa-solid fa-check" style="color: white;"></i> Problem-solving</span>
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
@@ -241,21 +269,24 @@
     </script>
 
     <!-- <script>
-   $(document).ready(function () {
-    $(".progress-circle").each(function () {
-        var container = $(this);
-        var progressBar = container.find("circle.meter-1"); // Sử dụng selector cụ thể
-        var progressPercent = container.find(".progress-percent-circle");
-        var valueNow = 0;
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
 
-        progressBar.animate({ 'stroke-dashoffset': (100 - valueNow) }, 500, function () {
-            progressPercent.text(100 - valueNow + "%");
-        });
-    });
-});
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
 
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
 
-</script> -->
+        window.addEventListener("scroll", reveal);
+    </script> -->
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">

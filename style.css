@@ -1,89 +1,102 @@
-html, body {
+html,
+body {
   width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
+
 .dark-vertion.black-bg {
-    background-color: #100e17;
+  background-color: #100e17;
 }
+
 .dark-vertion {
-    opacity: 0.9;
+  opacity: 0.9;
 }
+
 .nav-strict {
   transition: 0.5s;
-    background-color: #202026;
-    z-index: 99;
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  }
+  background-color: #202026;
+  z-index: 99;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
 .navbar {
   transition: 0.5s;
 }
+
 /* Tạo một div với kích thước bằng màn hình và đặt hình ảnh bên trong */
 .cover-image {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 /* Đảm bảo rằng hình ảnh sẽ bao phủ toàn bộ diện tích của div */
 .cover-image img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
+
 .cover-image {
-    position: relative;
-}
-.overlay {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    /* background-color: rgba(255, 255, 255, 0.5) */
-}
-.avatar img {
-    border: 20px solid #ccc;
-    width:400px;
-    border-radius: 50%;
-    left: 100px;
-    bottom: 50px;
-}
-.container-fluid {
-    padding: 0;
+  position: relative;
 }
 
 .overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(255, 255, 255, 0.5) */
 }
-.avatar, .text {
-    margin: 0 100px;
+
+.avatar img {
+  border: 20px solid #ccc;
+  width: 400px;
+  border-radius: 50%;
+  left: 100px;
+  bottom: 50px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar,
+.text {
+  margin: 0 100px;
 }
 
 .text {
-    font-size: 24px;
-    color: white;
+  font-size: 24px;
+  color: white;
 }
+
 .about p {
-    margin-left: 30px;
-    text-align: left;
-    font-size: 20px;
-    color: white;
+  margin-left: 30px;
+  text-align: left;
+  font-size: 20px;
+  color: white;
 }
 
 .about img {
-    width: 500px;
+  width: 500px;
 }
 
-.mh-about{
-    margin-top: 30px;
-    margin-bottom: 30px;
+.mh-about {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* skillll */
@@ -92,124 +105,221 @@ html, body {
 }
 
 .progress-container {
-    width: 600px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-  }
-  
-  .progress {
-    width: 100%;
-    height: 10px;
-    background-color: #000000 !important;
-    overflow: hidden;
-  }
-  
-  .progress-bar {
-    height: 100%;
-    background-color: rgb(255, 193, 7)!important;
-    transition: width 1s ease-in-out; /* Thời gian chuyển đổi là 1 giây */
-  }
-  
-  .progress-percent {
-    color: white;
-    margin-left: 10px;
-    font-weight: bold;
-  }
-  
-  .col .technical {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  
-  /* Tiếp theo, bạn có thể thêm các quy tắc CSS khác cho progress-container nếu cần */
-  
-  body {
-    display: grid;
-    height: 100vh; 
-    place-items: center;
-    background: #243b47;
-  }
-  
-  .progress-circle-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  svg {
-    width: 114px;
-    height: 114px;
-    margin: 1em;
-  }
-  
-  .bg {
-    fill: none;
-    stroke-width: 10px;
-    stroke: #1A2C34;
-  }
-  
-  [class^="meter-"] {
-    fill: none;
-    stroke-width: 10px;
-    stroke-linecap: round;
-    transform: rotate(-90deg);
-    transform-origin: 50% 50%;
-    
-  }
-  
-  .meter-1 {
-    stroke-dasharray: 360;
-    stroke-dashoffset: 160;
-    stroke: aqua;
-    animation: progress-1 1s ease-out;
-  }
-  .meter-2 {
-    stroke: lime;
-    stroke-dasharray: 360;
-    stroke-dashoffset: 180;
-    animation: progress-2 .75s ease-out;
-  }
-  .meter-3 {
-    stroke: magenta;
-    stroke-dasharray: 360;
-    stroke-dashoffset: 250;
-    animation: progress-3 .5s ease-out;
-  }
-  
-  @keyframes progress-1 {
-      from {
-          stroke-dashoffset: 360;
-      }
-      to {
-          stroke-dashoffset: 160;
-      }
-  }
-  
-  @keyframes progress-2 {
-    from {
-      stroke-dashoffset: 360;
-    }
-    to {
-      stroke-dashoffset: 180;
-    }
-  }
-  
-  @keyframes progress-3 {
-    from {
-      stroke-dashoffset: 360;
-    }
-    to {
-      stroke-dashoffset: 250;
-    }
+  width: 500px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.progress {
+  width: 100%;
+  height: 10px;
+  background-color: #243b47 !important;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: rgb(255, 193, 7) !important;
+  transition: width 1s ease-in-out;
+  /* Thời gian chuyển đổi là 1 giây */
+}
+
+.progress-percent {
+  color: white;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.col .technical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.col .soft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* circle */
+:root {
+  --custom-stroke-dashoffset-1: 0px;
+  --custom-stroke-dashoffset-2: 120px;
+  --custom-stroke-dashoffset-3: 250px;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  background: #243b47;
+}
+
+.progress-circle-container {
+  display: flex;
+  justify-content: center;
+}
+
+svg {
+  width: 114px;
+  height: 114px;
+  margin: 1em;
+}
+
+.bg {
+  fill: none;
+  stroke-width: 10px;
+  stroke: #1A2C34;
+}
+
+[class^="meter"] {
+  fill: none;
+  stroke-width: 10px;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+
+}
+
+.meter-1 {
+  stroke-dasharray: 360;
+  stroke-dashoffset: var(--custom-stroke-dashoffset-1);
+  stroke: aqua;
+
+}
+
+.meter-2 {
+  stroke: lime;
+  stroke-dasharray: 360;
+  stroke-dashoffset: var(--custom-stroke-dashoffset-2);
+  animation: progress-2 .75s ease-out;
+}
+
+.meter-3 {
+  stroke: magenta;
+  stroke-dasharray: 360;
+  stroke-dashoffset: var(--custom-stroke-dashoffset-3);
+  animation: progress-3 .5s ease-out;
+}
+
+@keyframes progress-1 {
+  from {
+    stroke-dashoffset: 360;
   }
 
-.progress-percent-circle {
-    font-size: 18px;
-    text-anchor: middle;
-  
+  to {
+    stroke-dashoffset: var(--custom-stroke-dashoffset-1);
+  }
 }
+
+@keyframes progress-2 {
+  from {
+    stroke-dashoffset: 360;
+  }
+
+  to {
+    stroke-dashoffset: var(--custom-stroke-dashoffset-2);
+  }
+}
+
+@keyframes progress-3 {
+  from {
+    stroke-dashoffset: 360;
+  }
+
+  to {
+    stroke-dashoffset: var(--custom-stroke-dashoffset-3);
+  }
+}
+
+.progress-percent-circle {
+  font-size: 18px;
+  text-anchor: middle;
+  fill: white;
+}
+
+/* card */
+.cc {
+  display: flex;
+  justify-content: center;
+
+}
+
+.card {
+  margin-top: 20px;
+  width: 500px;
+  height: 254px;
+  background: #07182E !important;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px !important;
+}
+
+.card span {
+  z-index: 1;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.card h2 {
+  z-index: 1;
+}
+.custom-hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 100%;
+  margin: 5px 0;
+  z-index: 1;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+  color: white;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  width: 700px;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  height: 150px;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+  text-align: start;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  background: #07182E;
+  ;
+  inset: 5px;
+  border-radius: 15px;
+}
+
+/* .card:hover:before {
+  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+  animation: rotBGimg 3.5s linear infinite;
+} */
+
